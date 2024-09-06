@@ -1,0 +1,1 @@
+# EFR32BG2X-projects
