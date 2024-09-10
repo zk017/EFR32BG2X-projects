@@ -658,35 +658,6 @@ uint8_t sl_pwm_get_duty_cycle(sl_pwm_instance_t *pwm)
     return percent;
 }
 
-//--------------------------------------------
-void toggle_cc0_polarity(sl_pwm_instance_t *pwm, bool toggle)
-{
-	//static uint8_t g_L1_polarity_counts = 0, g_L2_polarity_counts=0;
-
-	if(toggle==true) //change polarity
-	{
-		pwm->timer->CC[0].CTRL |= 0x04;
-	}
-	else //shouldnt change
-	{
-		pwm->timer->CC[0].CTRL &= 0xFFFFFFFB;
-	}
-}
-
-//--------------------------------------------
-void toggle_cc1_polarity(sl_pwm_instance_t *pwm, bool toggle)
-{
-	//static uint8_t g_L1_polarity_counts = 0, g_L2_polarity_counts=0;
-
-	if(toggle==true) //change polarity
-	{
-		pwm->timer->CC[1].CTRL |= 0x04;
-	}
-	else //shouldnt change
-	{
-		pwm->timer->CC[1].CTRL &= 0xFFFFFFFB;
-	}
-}
 
 
 

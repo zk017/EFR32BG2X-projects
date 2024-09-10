@@ -186,8 +186,6 @@ void sl_pwm_set_duty_cycle(sl_pwm_instance_t *pwm, uint8_t percent);
  *****************************************************************************/
 uint8_t sl_pwm_get_duty_cycle(sl_pwm_instance_t *pwm);
 
-void toggle_cc1_polarity(sl_pwm_instance_t *pwm, bool toggle);
-void toggle_cc0_polarity(sl_pwm_instance_t *pwm, bool toggle);
 /** @} (end addtogroup pwm) */
 void set_hubu(void);
 void initTimer(void);
