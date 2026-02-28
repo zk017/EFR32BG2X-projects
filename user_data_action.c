@@ -1,4 +1,5 @@
-//commander readmem --range 0x0FE00000:+100
+//write:commander flash --patch 0x0FE00000:0x11223344:4
+//read:commander readmem --range 0x0FE00000:+100
 //when execute the function, you can use the command above the verify right or not.
 #include "em_msc.h"
 #include "sl_se_manager.h"
