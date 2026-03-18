@@ -2,6 +2,7 @@
  * @file app.c
  * @brief IADC Scan Example - EFR32BG21, Gecko SDK 4.1.0
  *        Channels: PC1 (battery), PC4 (motor1), PD1 (motor2)
+ *   only created by AI, not verified!
  ******************************************************************************/
 
 #include "em_device.h"
